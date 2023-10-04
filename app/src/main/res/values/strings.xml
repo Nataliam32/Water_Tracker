@@ -5,4 +5,6 @@
     <string name="medium">500ml</string>
     <string name="big">1000ml</string>
     <string name="today">Hoje\n</string>
+    <string name="undo">Desfazer</string>
+    <string name="result">%1$d ml</string>
 </resources>
