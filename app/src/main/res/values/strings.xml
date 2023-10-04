@@ -2,4 +2,7 @@
     <string name="app_name">WaterTracker</string>
     <string name="tips">Toque no botão abaixo de acordo com a quantidade de ml consumida</string>
     <string name="small">200ml</string>
+    <string name="medium">500ml</string>
+    <string name="big">1000ml</string>
+    <string name="today">Hoje\n</string>
 </resources>

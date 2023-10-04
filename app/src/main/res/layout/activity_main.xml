@@ -11,11 +11,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tips"
+        android:textSize="18sp"
         android:layout_marginTop="20dp"
         android:paddingHorizontal="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAlignment="center"/>
 
     <View
         android:id="@+id/divider"
@@ -32,6 +34,56 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/divider"
         android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_medium"
+        app:icon="@drawable/icon_water" />
+
+    <Button
+        android:id="@+id/btn_medium"
+        android:text="@string/medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/btn_small"
+        app:layout_constraintStart_toEndOf="@id/btn_small"
+        app:layout_constraintEnd_toStartOf="@id/btn_large"
+        app:icon="@drawable/icon_water" />
+
+    <Button
+        android:id="@+id/btn_large"
+        android:text="@string/big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_small"
+        app:layout_constraintStart_toEndOf="@id/btn_medium"
+        app:icon="@drawable/icon_water" />
+
+    <TextView
+        android:id="@+id/txt_today"
+        android:text="@string/today"
+        android:textSize="34sp"
+        android:textAllCaps="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txt_result"
+        tools:text="500ml"
+        android:text="0ml"
+        android:textSize="50sp"
+        android:textAllCaps="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txt_today"
+        app:layout_constraintBaseline_toBaselineOf="@id/txt_today"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
